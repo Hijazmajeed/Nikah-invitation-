@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f4f4f9;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Invitation card */
+        .invitation {
+            width: 800px;
+            height: 1100px;
+            background-image: url('wow.png'); /* Add the path to your image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Centered content */
+        .content {
+            text-align: center;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .header-text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .couple-names {
+            font-family: 'Dancing Script', cursive;
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sub-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .date-section {
+            margin-bottom: 40px;
+        }
+
+        .day {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .date {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: bold;
+        }
+
+        .month {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .time {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        /* Location and interaction */
+        .location {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .location a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Overlay effect */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Overlay to darken the background image */
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="header-text">TOGETHER WITH THEIR FAMILIES</div>
+            <div class="couple-names">Shamna & Anas</div>
+            <div class="sub-text">Invite You to Celebrate Their Nikah Ceremony</div>
+
+            <div class="date-section">
+                <div class="day">SATURDAY</div>
+                <div class="date">04</div>
+                <div class="month">JANUARY</div>
+                <div class="time">AT 12 PM, 2025</div>
+            </div>
+
+            <div class="location">
+                GREEN LAND ALTHARA <br>
+                <a href="#">Get Directions</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
